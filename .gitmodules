@@ -1,0 +1,3 @@
+[submodule "CocoaAsyncSocket"]
+	path = CocoaAsyncSocket
+	url = https://github.com/baiyongrui/CocoaAsyncSocket.git

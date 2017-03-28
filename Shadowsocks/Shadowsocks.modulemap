@@ -1,0 +1,5 @@
+module Shadowsocks {
+    umbrella header "Shadowsocks.h"
+    export *
+
+}
