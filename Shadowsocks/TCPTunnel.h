@@ -12,7 +12,6 @@
 #import "SSProfile.h"
 
 #include "crypto.h"
-#include "common.h"
 
 
 @class TCPTunnelRemote;

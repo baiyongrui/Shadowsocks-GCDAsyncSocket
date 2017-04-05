@@ -28,6 +28,10 @@
 #define STREAM_WRITE 2
 #define TFO_SYN 3
 
+// Stage
+#define STAGE_ADDRRESSING   1
+#define STAGE_STREAM        2
+
 static dispatch_queue_t socketQueue;
 static crypto_t *crypto;
 
@@ -47,7 +51,7 @@ static int verbose;
 
 - (instancetype)initWithProfile:(SSProfile *)profile tcpSocketIdentity:(int)identity dstAddr:(in_addr_t)dstAddr dstPort:(uint16_t)dstPort {
     if (self = [super init]) {
-        _stage = STAGE_PARSE;
+        _stage = STAGE_ADDRRESSING;
         _tunTCPSocketIdentity = identity;
         _dstAddr = dstAddr;
         _dstPort = dstPort;
@@ -188,7 +192,6 @@ static int verbose;
         else if (_dstPort == tls_default_port)
             ret = parse_tls_header(buf->data + 3 + abuf->len, buf->len - 3 - abuf->len, &hostname);
         if (ret == -1 && buf->len < BUF_SIZE) {
-            _stage = STAGE_PARSE;
             return;     // need read more
         }
         else if (ret > 0) {
@@ -330,7 +333,7 @@ static int verbose;
         
         buffer_t *buf;
         
-        if (_stage == STAGE_PARSE)
+        if (_stage == STAGE_ADDRRESSING)
             buf = _buf;
         else
             buf = _remote->_buf;
@@ -343,7 +346,7 @@ static int verbose;
         
         if (_stage == STAGE_STREAM)
             [weakSelf handle_stage_stream];
-        else if (_stage == STAGE_PARSE)
+        else if (_stage == STAGE_ADDRRESSING)
             [weakSelf handle_stage_parse:buf];
     });
 }
