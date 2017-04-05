@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB3648E81E8A4BDE0012E18C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB3648E71E8A4BDE0012E18C /* Info.plist */; };
+		CB18E7241E90065E001AFD34 /* TCPTunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = CB18E7221E90065E001AFD34 /* TCPTunnel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB18E7251E90065E001AFD34 /* TCPTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB18E7231E90065E001AFD34 /* TCPTunnel.m */; };
+		CB18E72C1E9017CD001AFD34 /* libmbedcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18E72A1E9017B8001AFD34 /* libmbedcrypto.a */; };
+		CB18E72D1E9035B4001AFD34 /* TCPTunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = CB18E7221E90065E001AFD34 /* TCPTunnel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB18E7321E90374C001AFD34 /* libmbedcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18E72A1E9017B8001AFD34 /* libmbedcrypto.a */; };
+		CB18E7331E90374C001AFD34 /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1A71E8A4C9300DC4979 /* libmbedtls.a */; };
+		CB18E7341E903767001AFD34 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1591E8A4C9300DC4979 /* libsodium.a */; };
 		CBADF1C91E8A4C9300DC4979 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF11F1E8A4C9300DC4979 /* core.h */; };
 		CBADF1CA1E8A4C9300DC4979 /* crypto_aead_aes256gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1201E8A4C9300DC4979 /* crypto_aead_aes256gcm.h */; };
 		CBADF1CB1E8A4C9300DC4979 /* crypto_aead_chacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1211E8A4C9300DC4979 /* crypto_aead_chacha20poly1305.h */; };
@@ -65,8 +71,6 @@
 		CBADF1FF1E8A4C9300DC4979 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1551E8A4C9300DC4979 /* utils.h */; };
 		CBADF2001E8A4C9300DC4979 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1561E8A4C9300DC4979 /* version.h */; };
 		CBADF2011E8A4C9300DC4979 /* sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1571E8A4C9300DC4979 /* sodium.h */; };
-		CBADF2031E8A4C9300DC4979 /* libsodium.la in Resources */ = {isa = PBXBuildFile; fileRef = CBADF15A1E8A4C9300DC4979 /* libsodium.la */; };
-		CBADF2041E8A4C9300DC4979 /* libsodium.pc in Resources */ = {isa = PBXBuildFile; fileRef = CBADF15C1E8A4C9300DC4979 /* libsodium.pc */; };
 		CBADF2051E8A4C9300DC4979 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1601E8A4C9300DC4979 /* aes.h */; };
 		CBADF2061E8A4C9300DC4979 /* aesni.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1611E8A4C9300DC4979 /* aesni.h */; };
 		CBADF2071E8A4C9300DC4979 /* arc4.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1621E8A4C9300DC4979 /* arc4.h */; };
@@ -136,9 +140,6 @@
 		CBADF2471E8A4C9300DC4979 /* x509_crt.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1A21E8A4C9300DC4979 /* x509_crt.h */; };
 		CBADF2481E8A4C9300DC4979 /* x509_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1A31E8A4C9300DC4979 /* x509_csr.h */; };
 		CBADF2491E8A4C9300DC4979 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1A41E8A4C9300DC4979 /* xtea.h */; };
-		CBADF24A1E8A4C9300DC4979 /* libmbedcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1A61E8A4C9300DC4979 /* libmbedcrypto.a */; };
-		CBADF24B1E8A4C9300DC4979 /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1A71E8A4C9300DC4979 /* libmbedtls.a */; };
-		CBADF24C1E8A4C9300DC4979 /* libmbedx509.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1A81E8A4C9300DC4979 /* libmbedx509.a */; };
 		CBADF24D1E8A4C9300DC4979 /* aead.c in Sources */ = {isa = PBXBuildFile; fileRef = CBADF1AA1E8A4C9300DC4979 /* aead.c */; };
 		CBADF24E1E8A4C9300DC4979 /* aead.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1AB1E8A4C9300DC4979 /* aead.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBADF24F1E8A4C9300DC4979 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = CBADF1AC1E8A4C9300DC4979 /* base64.c */; };
@@ -152,7 +153,6 @@
 		CBADF2571E8A4C9300DC4979 /* bloom.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1B51E8A4C9300DC4979 /* bloom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBADF2581E8A4C9300DC4979 /* MurmurHash2.c in Sources */ = {isa = PBXBuildFile; fileRef = CBADF1B71E8A4C9300DC4979 /* MurmurHash2.c */; };
 		CBADF2591E8A4C9300DC4979 /* murmurhash2.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1B81E8A4C9300DC4979 /* murmurhash2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBADF25A1E8A4C9300DC4979 /* README in Resources */ = {isa = PBXBuildFile; fileRef = CBADF1B91E8A4C9300DC4979 /* README */; };
 		CBADF25B1E8A4C9300DC4979 /* ppbloom.c in Sources */ = {isa = PBXBuildFile; fileRef = CBADF1BA1E8A4C9300DC4979 /* ppbloom.c */; };
 		CBADF25C1E8A4C9300DC4979 /* ppbloom.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1BB1E8A4C9300DC4979 /* ppbloom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBADF25D1E8A4C9300DC4979 /* protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1BC1E8A4C9300DC4979 /* protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -169,9 +169,6 @@
 		CBADF2681E8A4C9300DC4979 /* SSProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1C71E8A4C9300DC4979 /* SSProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBADF2691E8A4C9300DC4979 /* SSProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = CBADF1C81E8A4C9300DC4979 /* SSProfile.m */; };
 		CBADF26A1E8A4D2A00DC4979 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1591E8A4C9300DC4979 /* libsodium.a */; };
-		CBADF26B1E8A4D6D00DC4979 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1591E8A4C9300DC4979 /* libsodium.a */; };
-		CBADF26C1E8A4D8600DC4979 /* libmbedcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1A61E8A4C9300DC4979 /* libmbedcrypto.a */; };
-		CBADF26D1E8A4D8600DC4979 /* libmbedx509.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1A81E8A4C9300DC4979 /* libmbedx509.a */; };
 		CBADF26E1E8A4D8600DC4979 /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF1A71E8A4C9300DC4979 /* libmbedtls.a */; };
 		CBADF27B1E8A4EDA00DC4979 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF2761E8A4ECF00DC4979 /* CocoaAsyncSocket.framework */; };
 		CBADF27C1E8A4EE800DC4979 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADF2781E8A4ECF00DC4979 /* CocoaAsyncSocket.framework */; };
@@ -329,6 +326,8 @@
 		CBADF3151E8A500A00DC4979 /* SSLocal.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1C51E8A4C9300DC4979 /* SSLocal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBADF3161E8A500A00DC4979 /* SSProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1C71E8A4C9300DC4979 /* SSProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBADF3171E8A503700DC4979 /* Shadowsocks.h in Headers */ = {isa = PBXBuildFile; fileRef = CBADF1C41E8A4C9300DC4979 /* Shadowsocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBE5D35E1E952A3300326C48 /* UDPTunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE5D35C1E952A3300326C48 /* UDPTunnel.h */; };
+		CBE5D35F1E952A3300326C48 /* UDPTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE5D35D1E952A3300326C48 /* UDPTunnel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -356,6 +355,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB18E7221E90065E001AFD34 /* TCPTunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPTunnel.h; sourceTree = "<group>"; };
+		CB18E7231E90065E001AFD34 /* TCPTunnel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPTunnel.m; sourceTree = "<group>"; };
+		CB18E72A1E9017B8001AFD34 /* libmbedcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedcrypto.a; sourceTree = "<group>"; };
 		CB3648DD1E8A4AD50012E18C /* Shadowsocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shadowsocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3648E71E8A4BDE0012E18C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3648EE1E8A4BF60012E18C /* Shadowsocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shadowsocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -417,8 +419,6 @@
 		CBADF1561E8A4C9300DC4979 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		CBADF1571E8A4C9300DC4979 /* sodium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sodium.h; sourceTree = "<group>"; };
 		CBADF1591E8A4C9300DC4979 /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsodium.a; sourceTree = "<group>"; };
-		CBADF15A1E8A4C9300DC4979 /* libsodium.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libsodium.la; sourceTree = "<group>"; };
-		CBADF15C1E8A4C9300DC4979 /* libsodium.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libsodium.pc; sourceTree = "<group>"; };
 		CBADF1601E8A4C9300DC4979 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
 		CBADF1611E8A4C9300DC4979 /* aesni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesni.h; sourceTree = "<group>"; };
 		CBADF1621E8A4C9300DC4979 /* arc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arc4.h; sourceTree = "<group>"; };
@@ -488,9 +488,7 @@
 		CBADF1A21E8A4C9300DC4979 /* x509_crt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_crt.h; sourceTree = "<group>"; };
 		CBADF1A31E8A4C9300DC4979 /* x509_csr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_csr.h; sourceTree = "<group>"; };
 		CBADF1A41E8A4C9300DC4979 /* xtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtea.h; sourceTree = "<group>"; };
-		CBADF1A61E8A4C9300DC4979 /* libmbedcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedcrypto.a; sourceTree = "<group>"; };
 		CBADF1A71E8A4C9300DC4979 /* libmbedtls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedtls.a; sourceTree = "<group>"; };
-		CBADF1A81E8A4C9300DC4979 /* libmbedx509.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedx509.a; sourceTree = "<group>"; };
 		CBADF1AA1E8A4C9300DC4979 /* aead.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aead.c; sourceTree = "<group>"; };
 		CBADF1AB1E8A4C9300DC4979 /* aead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aead.h; sourceTree = "<group>"; };
 		CBADF1AC1E8A4C9300DC4979 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
@@ -522,6 +520,8 @@
 		CBADF1C81E8A4C9300DC4979 /* SSProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSProfile.m; sourceTree = "<group>"; };
 		CBADF26F1E8A4ECF00DC4979 /* CocoaAsyncSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaAsyncSocket.xcodeproj; path = CocoaAsyncSocket/CocoaAsyncSocket.xcodeproj; sourceTree = "<group>"; };
 		CBADF3181E8A508E00DC4979 /* Shadowsocks.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Shadowsocks.modulemap; sourceTree = "<group>"; };
+		CBE5D35C1E952A3300326C48 /* UDPTunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPTunnel.h; sourceTree = "<group>"; };
+		CBE5D35D1E952A3300326C48 /* UDPTunnel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPTunnel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -530,10 +530,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBADF27B1E8A4EDA00DC4979 /* CocoaAsyncSocket.framework in Frameworks */,
-				CBADF26B1E8A4D6D00DC4979 /* libsodium.a in Frameworks */,
-				CBADF24A1E8A4C9300DC4979 /* libmbedcrypto.a in Frameworks */,
-				CBADF24C1E8A4C9300DC4979 /* libmbedx509.a in Frameworks */,
-				CBADF24B1E8A4C9300DC4979 /* libmbedtls.a in Frameworks */,
+				CB18E7341E903767001AFD34 /* libsodium.a in Frameworks */,
+				CB18E7321E90374C001AFD34 /* libmbedcrypto.a in Frameworks */,
+				CB18E7331E90374C001AFD34 /* libmbedtls.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,8 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBADF27C1E8A4EE800DC4979 /* CocoaAsyncSocket.framework in Frameworks */,
-				CBADF26C1E8A4D8600DC4979 /* libmbedcrypto.a in Frameworks */,
-				CBADF26D1E8A4D8600DC4979 /* libmbedx509.a in Frameworks */,
+				CB18E72C1E9017CD001AFD34 /* libmbedcrypto.a in Frameworks */,
 				CBADF26E1E8A4D8600DC4979 /* libmbedtls.a in Frameworks */,
 				CBADF26A1E8A4D2A00DC4979 /* libsodium.a in Frameworks */,
 			);
@@ -581,6 +579,10 @@
 				CBADF1C61E8A4C9300DC4979 /* SSLocal.m */,
 				CBADF1C71E8A4C9300DC4979 /* SSProfile.h */,
 				CBADF1C81E8A4C9300DC4979 /* SSProfile.m */,
+				CB18E7221E90065E001AFD34 /* TCPTunnel.h */,
+				CB18E7231E90065E001AFD34 /* TCPTunnel.m */,
+				CBE5D35C1E952A3300326C48 /* UDPTunnel.h */,
+				CBE5D35D1E952A3300326C48 /* UDPTunnel.m */,
 				CB3648E71E8A4BDE0012E18C /* Info.plist */,
 				CBADF3181E8A508E00DC4979 /* Shadowsocks.modulemap */,
 			);
@@ -680,18 +682,8 @@
 			isa = PBXGroup;
 			children = (
 				CBADF1591E8A4C9300DC4979 /* libsodium.a */,
-				CBADF15A1E8A4C9300DC4979 /* libsodium.la */,
-				CBADF15B1E8A4C9300DC4979 /* pkgconfig */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		CBADF15B1E8A4C9300DC4979 /* pkgconfig */ = {
-			isa = PBXGroup;
-			children = (
-				CBADF15C1E8A4C9300DC4979 /* libsodium.pc */,
-			);
-			path = pkgconfig;
 			sourceTree = "<group>";
 		};
 		CBADF15D1E8A4C9300DC4979 /* mbedtls */ = {
@@ -790,9 +782,8 @@
 		CBADF1A51E8A4C9300DC4979 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				CBADF1A61E8A4C9300DC4979 /* libmbedcrypto.a */,
+				CB18E72A1E9017B8001AFD34 /* libmbedcrypto.a */,
 				CBADF1A71E8A4C9300DC4979 /* libmbedtls.a */,
-				CBADF1A81E8A4C9300DC4979 /* libmbedx509.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -874,8 +865,10 @@
 				CBADF2601E8A4C9300DC4979 /* stream.h in Headers */,
 				CBADF2621E8A4C9300DC4979 /* tls.h in Headers */,
 				CBADF2641E8A4C9300DC4979 /* utils.h in Headers */,
+				CB18E7241E90065E001AFD34 /* TCPTunnel.h in Headers */,
 				CBADF2661E8A4C9300DC4979 /* SSLocal.h in Headers */,
 				CBADF2681E8A4C9300DC4979 /* SSProfile.h in Headers */,
+				CBE5D35E1E952A3300326C48 /* UDPTunnel.h in Headers */,
 				CBADF2651E8A4C9300DC4979 /* Shadowsocks.h in Headers */,
 				CBADF2321E8A4C9300DC4979 /* pkcs11.h in Headers */,
 				CBADF21B1E8A4C9300DC4979 /* ecdh.h in Headers */,
@@ -1023,6 +1016,7 @@
 				CBADF3121E8A500A00DC4979 /* stream.h in Headers */,
 				CBADF3131E8A500A00DC4979 /* tls.h in Headers */,
 				CBADF3141E8A500A00DC4979 /* utils.h in Headers */,
+				CB18E72D1E9035B4001AFD34 /* TCPTunnel.h in Headers */,
 				CBADF3151E8A500A00DC4979 /* SSLocal.h in Headers */,
 				CBADF3161E8A500A00DC4979 /* SSProfile.h in Headers */,
 				CBADF3171E8A503700DC4979 /* Shadowsocks.h in Headers */,
@@ -1265,10 +1259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBADF25A1E8A4C9300DC4979 /* README in Resources */,
-				CB3648E81E8A4BDE0012E18C /* Info.plist in Resources */,
-				CBADF2031E8A4C9300DC4979 /* libsodium.la in Resources */,
-				CBADF2041E8A4C9300DC4979 /* libsodium.pc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1293,9 +1283,11 @@
 				CBADF2611E8A4C9300DC4979 /* tls.c in Sources */,
 				CBADF2691E8A4C9300DC4979 /* SSProfile.m in Sources */,
 				CBADF2521E8A4C9300DC4979 /* crypto.c in Sources */,
+				CBE5D35F1E952A3300326C48 /* UDPTunnel.m in Sources */,
 				CBADF2631E8A4C9300DC4979 /* utils.c in Sources */,
 				CBADF25B1E8A4C9300DC4979 /* ppbloom.c in Sources */,
 				CBADF25F1E8A4C9300DC4979 /* stream.c in Sources */,
+				CB18E7251E90065E001AFD34 /* TCPTunnel.m in Sources */,
 				CBADF24D1E8A4C9300DC4979 /* aead.c in Sources */,
 				CBADF2541E8A4C9300DC4979 /* http.c in Sources */,
 			);
@@ -1326,7 +1318,7 @@
 		CB3648D41E8A4A540012E18C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 			};
 			name = Debug;
@@ -1334,7 +1326,7 @@
 		CB3648D51E8A4A540012E18C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 			};
 			name = Release;
@@ -1394,7 +1386,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Shadowsocks/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1463,7 +1455,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Shadowsocks/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

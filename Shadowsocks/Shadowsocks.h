@@ -31,4 +31,5 @@ FOUNDATION_EXPORT const unsigned char ShadowsocksVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <Shadowsocks/PublicHeader.h>
 #import <Shadowsocks/SSLocal.h>
 #import <Shadowsocks/SSProfile.h>
-
+#import <Shadowsocks/TCPTunnel.h>
+#import <Shadowsocks/UDPTunnel.h>

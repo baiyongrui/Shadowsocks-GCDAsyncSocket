@@ -96,7 +96,7 @@ int verbose;
             int err = crypto->encrypt(_remote->_buf, _e_ctx, BUF_SIZE);
             
             if (err) {
-                LOGE("invalid password or cipher");
+                NSLog(@"invalid password or cipher");
                 [_sock disconnect];
                 return;
             }
@@ -318,7 +318,7 @@ int verbose;
     int sni_detected = 0;
     
     if (atyp == 1 || atyp == 4) {
-        char *hostname;
+        char *hostname = NULL;
         uint16_t p = ntohs(*(uint16_t *)(abuf->data + abuf->len - 2));
         int ret    = 0;
         if (p == http_default_port)
@@ -483,7 +483,7 @@ int verbose;
     
     if (_stage == STAGE_STREAM)
         [self handle_stage_stream];
-    if (_stage == STAGE_INIT)
+    else if (_stage == STAGE_INIT)
         [self handle_stage_init:buf];
     else if (_stage == STAGE_HANDSHAKE || _stage == STAGE_PARSE)
         [self handle_stage_handshake_parse:buf];
